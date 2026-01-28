@@ -1,2 +1,18 @@
-# Sentinel-AI-Audit-Engine
-Sentinel AI: An Enterprise Observability Suite featuring a Self-Auditing RAG Engine and AI-Native Database Anomaly Detection. Built for DataForge 2026.
+## Self-Auditing Context Engine
+
+This project demonstrates an explainable context-selection mechanism for AI systems.
+
+### Problem
+AI systems silently select some documents as context while ignoring others.
+This project logs and explains those decisions.
+
+### Approach
+- TF-IDF + cosine similarity is used to compute relevance scores.
+- A fixed threshold (0.65) determines document inclusion.
+- Every decision is logged with a human-readable explanation.
+
+### Output
+The system generates a CSV audit log containing:
+- Relevance scores
+- Selection decisions
+- Reasons for inclusion or exclusion
