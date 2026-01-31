@@ -69,7 +69,10 @@ Contains:
 
 
 ## 📊 Flowchart – Context Engine
+This flowchart shows how the query and documents are processed using TF-IDF,
+cosine similarity scoring, threshold filtering, and CSV audit generation.
 
+<img src="assets/PS1_flowchart.jpg" width="900">
 
 #  Problem Statement 2 – Behavioral Anomaly Detection Engine
 
@@ -104,7 +107,11 @@ Contains:
 - reason
 
 ## 📊 Flowchart – Behavioral Anomaly Detection
+This flowchart shows how database logs are analyzed per user, baseline behavior
+is learned, z-score is calculated, risk scoring is performed, and suspicious
+activities are flagged.
 
+<img src="assets/PS2_flowchart.jpg" width="900">
 
 # ▶️ How to Run
 
