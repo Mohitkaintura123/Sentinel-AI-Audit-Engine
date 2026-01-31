@@ -16,7 +16,7 @@ Both systems focus on:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 DataForge-Hackathon-Solutions/
 │
@@ -44,10 +44,10 @@ DataForge-Hackathon-Solutions/
 
 #  Problem Statement 1 – Self-Auditing Context Engine
 
-## 🎯 Objective
+##  Objective
 Given a user query and multiple document summaries, automatically determine which documents are relevant and generate a transparent audit report.
 
-## 🧠 Approach
+##  Approach
 1. Load query and documents
 2. Text preprocessing
 3. TF-IDF vectorization
@@ -55,13 +55,13 @@ Given a user query and multiple document summaries, automatically determine whic
 5. Threshold filtering
 6. Generate explainable CSV audit
 
-## ⚙️ Techniques Used
+##  Techniques Used
 - TF-IDF
 - Cosine Similarity
 - Threshold-based decision logic
 - Explainable scoring
 
-## 📤 Output
+##  Output
 PS1_Context_Audit/output/PS1_Context_Audit.csv
 
 Contains:
@@ -73,7 +73,7 @@ Contains:
 - reason
 
 
-## 📊 Flowchart – Context Engine
+##  Flowchart – Context Engine
 This flowchart shows how the query and documents are processed using TF-IDF,
 cosine similarity scoring, threshold filtering, and CSV audit generation.
 
@@ -81,10 +81,10 @@ cosine similarity scoring, threshold filtering, and CSV audit generation.
 
 #  Problem Statement 2 – Behavioral Anomaly Detection Engine
 
-## 🎯 Objective
+##  Objective
 Detect abnormal database activity by learning normal user behavior and identifying statistical deviations.
 
-## 🧠 Approach
+##  Approach
 1. Generate database activity logs
 2. Group logs by user
 3. Learn baseline behavior (average rows scanned)
@@ -93,14 +93,14 @@ Detect abnormal database activity by learning normal user behavior and identifyi
 6. Flag anomalies
 7. Generate anomaly report
 
-## ⚙️ Techniques Used
+##  Techniques Used
 - Statistical modeling
 - Z-score anomaly detection
 - Percentile risk scoring
 - Explainable alerts
 - No if-else rule engine
 
-## 📤 Output
+##  Output
 PS2_Behavioral_Anomaly_Detection/output/PS2_Anomaly_Report.csv
 
 Contains:
@@ -111,14 +111,14 @@ Contains:
 - flagged (True/False)
 - reason
 
-## 📊 Flowchart – Behavioral Anomaly Detection
+##  Flowchart – Behavioral Anomaly Detection
 This flowchart shows how database logs are analyzed per user, baseline behavior
 is learned, z-score is calculated, risk scoring is performed, and suspicious
 activities are flagged.
 
 <img src="assets/PS2_flowchart.jpg" width="900">
 
-# ▶️ How to Run
+#  How to Run
 
 ## Install dependencies
 pip install -r requirements.txt
@@ -130,7 +130,7 @@ cd PS1_Context_Audit python generate_csv.py
 cd PS2_Behavioral_Anomaly_Detection python generate_db_activity_logs.py python behavioral_anomaly_engine.py
 
 
-# 💡 Key Highlights
+#  Key Highlights
 
 •Fully explainable decisions  
 •No hardcoded rules  
@@ -141,7 +141,7 @@ cd PS2_Behavioral_Anomaly_Detection python generate_db_activity_logs.py python b
 • Industry-style audit logs  
 
 
-# 🏁 Submission
+#  Submission
 
 This repository is submitted as part of the **DataForge Hackathon pre-evaluation (10% weightage)**.
 
@@ -149,7 +149,7 @@ Both solutions are runnable locally and generate their respective CSV outputs.
 
 ---
 
-# 👨‍💻 Team
+#  Team
 Team Name: Neural Forge 
 Members: 4
 
